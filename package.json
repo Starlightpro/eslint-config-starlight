@@ -1,0 +1,86 @@
+{
+  "name": "@starlightpro/eslint-config-starlight",
+  "version": "0.14.6",
+  "description": "ESLint rules for Starlight.",
+  "private": false,
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "rules",
+    "jsx-a11y.js",
+    "flowtype.js",
+    "import.js",
+    "promise.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starlightpro/eslint-config-starlight.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "react",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Steven Truesdell <steven.truesdell@starlightpro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Starlightpro/eslint-config-starlight/issues"
+  },
+  "homepage": "https://github.com/Starlightpro/eslint-config-starlight#readme",
+  "engines": {
+    "node": "7.x || 8.x || 9.x"
+  },
+  "scripts": {
+    "find-new-rules": "eslint-find-rules --unused ./.eslintrc.js",
+    "lint": "eslint . --fix",
+    "test": "yarn lint && yarn find-new-rules",
+    "test:ci": "yarn lint && yarn find-new-rules && yarn eslint-check",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "list-rules": "eslint-index .eslintrc.js --docs",
+    "table-rules": "eslint-index .eslintrc.js --format table",
+    "count-rules": "eslint-index .eslintrc.js --format number",
+    "list-omitted-rules": "eslint-index .eslintrc.js --status omitted --docs",
+    "count-omitted-rules": "eslint-index .eslintrc.js --status omitted --format number",
+    "list-enabled-rules": "eslint-index .eslintrc.js --status warn error --docs",
+    "count-enabled-rules": "eslint-index .eslintrc.js --status warn error --format number",
+    "list-disabled-rules": "eslint-index .eslintrc.js --status omitted off --docs",
+    "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.16.0",
+    "prettier": ">=1.10.0"
+  },
+  "devDependencies": {
+    "@metahub/cz-conventional-commit": "^2.0.1",
+    "commitizen": "^2.9.6",
+    "eslint": "4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-index": "^1.4.0",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "babel-eslint": "8.2.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-flowtype": "2.42.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.5.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-react": "7.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@metahub/cz-conventional-commit",
+      "cz-conventional-commit": {
+        "maxSubjectLength": 72,
+        "bodyLineLength": 100,
+        "emoji": true
+      }
+    }
+  }
+}
