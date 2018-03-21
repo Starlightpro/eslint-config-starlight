@@ -161,5 +161,9 @@ module.exports = {
     'flowtype/use-flow-type': 'error',
     'flowtype/require-exact-type': 'off',
     'flowtype/no-flow-fix-me-comments': 'off',
+    'flowtype/require-types-at-top': 'off',
+    'flowtype/newline-after-flow-annotation': 'off',
+    'flowtype/no-existential-type': 'off',
+    'flowtype/type-import-style': 'off',
   },
 };

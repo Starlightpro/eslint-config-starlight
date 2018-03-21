@@ -4,8 +4,13 @@ module.exports = {
    * @see https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
    */
   rules: {
+    /**
+     * This option validates a specific depth for JSX.
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-depth.md
+     */
+    'react/jsx-max-depth': ['error', { max: 4 }],
     'react/jsx-child-element-spacing': 'error',
-    /** 
+    /**
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-default-props.md
      */
     'react/jsx-sort-default-props': 'off',
