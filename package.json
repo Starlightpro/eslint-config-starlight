@@ -51,8 +51,8 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": ">=4.19.0",
-    "prettier": ">=1.11.0"
+    "eslint": ">=5",
+    "prettier": ">=1.13.0"
   },
   "devDependencies": {
     "@metahub/cz-conventional-commit": "^3.0.1",
