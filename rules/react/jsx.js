@@ -1,9 +1,15 @@
+// @flow
 module.exports = {
   /**
    * React plugin JSX rules
    * @see https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
    */
   rules: {
+    /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md
+     */
+    'react/jsx-props-no-multi-spaces': 'error',
+    'react/no-unsafe': 'off',
     /**
      * This option validates a specific depth for JSX.
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-depth.md

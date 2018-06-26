@@ -1,6 +1,6 @@
 {
   "name": "@starlightpro/eslint-config-starlight",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ESLint rules for Starlight.",
   "private": false,
   "main": "index.js",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/Starlightpro/eslint-config-starlight#readme",
   "engines": {
-    "node": "7.x || 8.x || 9.x"
+    "node": "7.x || 8.x || 9.x || 10.x"
   },
   "scripts": {
     "find-new-rules": "eslint-find-rules --unused .eslintrc.js",
@@ -51,27 +51,27 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": ">=4.18.0",
+    "eslint": ">=4.19.0",
     "prettier": ">=1.11.0"
   },
   "devDependencies": {
-    "@metahub/cz-conventional-commit": "^2.0.1",
-    "commitizen": "^2.9.6",
-    "eslint": "4.19.0",
+    "@metahub/cz-conventional-commit": "^3.0.1",
+    "commitizen": "^2.10.1",
+    "eslint": "5.0.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-find-rules": "^3.2.2",
-    "eslint-index": "^1.4.0",
-    "prettier": "^1.11.1"
+    "eslint-find-rules": "^3.3.1",
+    "eslint-index": "^1.5.0",
+    "prettier": "^1.13.6"
   },
   "dependencies": {
-    "babel-eslint": "8.2.2",
-    "eslint-plugin-babel": "4.1.2",
-    "eslint-plugin-flowtype": "2.46.1",
-    "eslint-plugin-import": "2.9.0",
+    "babel-eslint": "8.2.5",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-flowtype": "2.49.3",
+    "eslint-plugin-import": "2.13.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-prettier": "2.6.0",
-    "eslint-plugin-promise": "3.7.0",
-    "eslint-plugin-react": "7.7.0"
+    "eslint-plugin-prettier": "2.6.1",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-react": "7.10.0"
   },
   "config": {
     "commitizen": {

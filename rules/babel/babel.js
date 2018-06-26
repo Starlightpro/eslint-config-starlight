@@ -4,6 +4,8 @@ module.exports = {
    * @see https://github.com/babel/eslint-plugin-babel
    */
   rules: {
+    'babel/quotes': 0,
+    'babel/no-unused-expressions': 2,
     /**
      * Ignores capitalized decorators
      */

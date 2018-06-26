@@ -4,6 +4,11 @@ module.exports = {
    * @see https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules
    */
   rules: {
+    /**
+     * @see https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-array-style-complex-type
+     */
+    'flowtype/array-style-complex-type': 'error',
+    'flowtype/array-style-simple-type': 'error',
     'flowtype/no-mutable-array': 'error',
     /**
      * An extension of ESLint's no-unused-expressions. This rule ignores type cast expressions,

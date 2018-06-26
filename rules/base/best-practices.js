@@ -1,3 +1,4 @@
+// @flow
 module.exports = {
   /**
    * Best practice rules
@@ -95,6 +96,22 @@ module.exports = {
      */
     'guard-for-in': 'error',
 
+    /**
+     * Files containing multiple classes can often result in a less navigable
+     * and poorly structured codebase. Best practice is to keep each file
+     * limited to a single responsibility.
+     * @see https://eslint.org/docs/5.0.0/rules/max-classes-per-file
+     */
+    'max-classes-per-file': ['error', 2],
+    'max-lines-per-function': ['error', 40],
+    /**
+     * When Object.assign is called using an object literal as the first argument,
+     *  this rule requires using the object spread syntax instead. This rule also
+     * warns on cases where an Object.assign call is made using a single argument
+     * that is an object literal, in this case, the Object.assign call is not needed.
+     * @see https://eslint.org/docs/5.0.0/rules/prefer-object-spread
+     */
+    'prefer-object-spread': 'error',
     /**
      * Disallow the use of alert, confirm, and prompt
      * @see http://eslint.org/docs/rules/no-alert
