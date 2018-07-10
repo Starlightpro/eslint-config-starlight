@@ -9,6 +9,6 @@ module.exports = {
      * @see http://eslint.org/docs/rules/strict
      * @fixable
      */
-    strict: ['error', 'global'],
+    strict: 'off',
   },
 };

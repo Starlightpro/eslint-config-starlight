@@ -1,3 +1,4 @@
+// @flow
 module.exports = {
   rules: {
     'prettier/prettier': [
@@ -6,9 +7,10 @@ module.exports = {
         trailingComma: 'all',
         singleQuote: true,
         semi: true,
+        arrowParens: 'avoid',
         bracketSpacing: true,
         jsxBracketSameLine: false,
-        printWidth: 100,
+        printWidth: 80,
         parser: 'babylon',
       },
     ],

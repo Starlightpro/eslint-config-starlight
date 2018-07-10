@@ -18,7 +18,10 @@ module.exports = {
      * Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children.
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
      */
-    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
+    'react/jsx-curly-brace-presence': [
+      'error',
+      { props: 'never', children: 'never' },
+    ],
     'react/no-typos': 'error',
     'react/no-unused-state': 'error',
     /**
@@ -293,7 +296,13 @@ module.exports = {
     'react/sort-comp': [
       'error',
       {
-        order: ['static-methods', 'lifecycle', 'everything-else', '/^render.+$/', 'render'],
+        order: [
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          '/^render.+$/',
+          'render',
+        ],
       },
     ],
   },

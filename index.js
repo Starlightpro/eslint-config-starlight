@@ -1,14 +1,15 @@
+// @flow
 module.exports = {
   // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
   parser: 'babel-eslint',
 
   // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 9,
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       impliedStrict: true,
+      objectLiteralDuplicateProperties: false,
       generators: true,
     },
   },
@@ -19,6 +20,8 @@ module.exports = {
     node: true,
     es6: true,
     jest: true,
+    'shared-node-browser': true,
+    commonjs: true,
   },
 
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins

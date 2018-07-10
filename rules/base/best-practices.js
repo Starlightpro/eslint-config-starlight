@@ -103,7 +103,14 @@ module.exports = {
      * @see https://eslint.org/docs/5.0.0/rules/max-classes-per-file
      */
     'max-classes-per-file': ['error', 2],
-    'max-lines-per-function': ['error', 40],
+    'max-lines-per-function': [
+      'error',
+      {
+        max: 60,
+        skipComments: true,
+        skipBlankLines: true,
+      },
+    ],
     /**
      * When Object.assign is called using an object literal as the first argument,
      *  this rule requires using the object spread syntax instead. This rule also
@@ -359,7 +366,7 @@ module.exports = {
      * Disallow unnecessary return await
      * @see http://eslint.org/docs/rules/no-return-await
      */
-    'no-return-await': 'error',
+    'no-return-await': 'off',
 
     /**
      * Disallow javascript: urls

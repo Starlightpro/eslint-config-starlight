@@ -1,14 +1,15 @@
+// @flow
 module.exports = {
   plugins: ['import'],
   env: {
     es6: true,
   },
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 9,
     sourceType: 'module',
-    ecmaFeatures: { experimentalObjectRestSpread: true },
   },
   settings: {
+    'import/resolver': { node: { extensions: ['.js', '.jsx'] } },
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
   },
   extends: [
