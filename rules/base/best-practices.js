@@ -5,6 +5,10 @@ module.exports = {
    * @see http://eslint.org/docs/rules/#best-practices
    */
   rules: {
+    'no-async-promise-executor': 'off',
+    'require-atomic-updates': 'off',
+    'no-misleading-character-class': 'off',
+    'require-unicode-regexp': 'off',
     /**
      * Enforce getter and setter pairs in objects
      * @see http://eslint.org/docs/rules/accessor-pairs
@@ -103,14 +107,7 @@ module.exports = {
      * @see https://eslint.org/docs/5.0.0/rules/max-classes-per-file
      */
     'max-classes-per-file': ['error', 2],
-    'max-lines-per-function': [
-      'error',
-      {
-        max: 60,
-        skipComments: true,
-        skipBlankLines: true,
-      },
-    ],
+    'max-lines-per-function': 'off',
     /**
      * When Object.assign is called using an object literal as the first argument,
      *  this rule requires using the object spread syntax instead. This rule also

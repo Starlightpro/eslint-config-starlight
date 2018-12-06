@@ -4,6 +4,7 @@ module.exports = {
    * @see https://github.com/babel/eslint-plugin-babel
    */
   rules: {
+    'babel/camelcase': 1,
     'babel/quotes': 0,
     'babel/no-unused-expressions': 2,
     /**
@@ -35,5 +36,6 @@ module.exports = {
     'babel/func-params-comma-dangle': 'off',
     'babel/generator-star-spacing': 'off',
     'babel/object-shorthand': 'off',
+    'babel/valid-typeof': 1,
   },
 };
