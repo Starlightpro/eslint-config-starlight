@@ -448,6 +448,7 @@ module.exports = {
      * @see http://eslint.org/docs/rules/no-unneeded-ternary
      */
     'no-unneeded-ternary': 'error',
+    'no-useless-catch': 'error',
 
     /**
      * Disallow whitespace before properties

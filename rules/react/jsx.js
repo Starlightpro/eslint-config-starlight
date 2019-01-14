@@ -9,6 +9,11 @@ module.exports = {
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md
      */
     'react/jsx-props-no-multi-spaces': 'error',
+    /**
+     * Enforce shorthand or standard form for React fragments
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-fragments.md
+     */
+    'react/jsx-fragments': 'off',
     'react/no-unsafe': 'off',
     /**
      * This option validates a specific depth for JSX.
