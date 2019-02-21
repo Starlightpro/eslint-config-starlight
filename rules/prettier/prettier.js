@@ -11,7 +11,7 @@ module.exports = {
         bracketSpacing: true,
         jsxBracketSameLine: false,
         printWidth: 80,
-        parser: 'babylon',
+        parser: 'babel',
       },
     ],
   },

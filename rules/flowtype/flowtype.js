@@ -9,8 +9,9 @@ module.exports = {
      */
     'flowtype/array-style-complex-type': 'error',
     'flowtype/array-style-simple-type': 'error',
+    'flowtype/no-mixed': 'off',
     'flowtype/no-mutable-array': 'off',
-    'flowtype/require-compound-type-alias': 'warn',
+    'flowtype/require-compound-type-alias': 'off',
     /**
      * An extension of ESLint's no-unused-expressions. This rule ignores type cast expressions,
      * but otherwise behaves the same as ESLint's no-unused-expressions.
