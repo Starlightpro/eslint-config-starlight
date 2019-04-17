@@ -171,6 +171,7 @@ module.exports = {
     'flowtype/require-types-at-top': 'off',
     'flowtype/newline-after-flow-annotation': 'off',
     'flowtype/no-existential-type': 'off',
+    'flowtype/spread-exact-type': 'off',
     'flowtype/type-import-style': 'off',
   },
 };

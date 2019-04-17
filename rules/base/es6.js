@@ -5,6 +5,10 @@ module.exports = {
    */
   rules: {
     /**
+     * @see https://eslint.org/docs/rules/prefer-named-capture-group
+     */
+    'prefer-named-capture-group': 'off',
+    /**
      * Require braces around arrow function bodies
      * @see http://eslint.org/docs/rules/arrow-body-style
      * @NOTE fixable
