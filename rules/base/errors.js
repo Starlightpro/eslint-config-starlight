@@ -209,7 +209,11 @@ module.exports = {
     'valid-jsdoc': [
       'error',
       {
+        prefer: {
+          return: 'returns',
+        },
         requireReturn: false,
+        requireReturnType: false,
       },
     ],
 

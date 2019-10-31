@@ -5,7 +5,7 @@ module.exports = {
    * @see http://eslint.org/docs/rules/#best-practices
    */
   rules: {
-    'no-async-promise-executor': 'off',
+    'no-async-promise-executor': 'error',
     'require-atomic-updates': 'off',
     'no-misleading-character-class': 'off',
     'require-unicode-regexp': 'off',
@@ -84,7 +84,7 @@ module.exports = {
       'error',
       {
         allowKeywords: true,
-        allowPattern: '^[a-z]+(?:[_-\\s][a-z]+)+$',
+        allowPattern: '^[a-z]+(?:[_-s][a-z]+)+$',
       },
     ],
 
@@ -120,7 +120,7 @@ module.exports = {
      * Disallow the use of alert, confirm, and prompt
      * @see http://eslint.org/docs/rules/no-alert
      */
-    'no-alert': 'error',
+    'no-alert': 'off',
 
     /**
      * Disallow the use of arguments.caller or arguments.callee
@@ -213,12 +213,7 @@ module.exports = {
      * @see http://eslint.org/docs/rules/no-implicit-coercion
      * @fixable
      */
-    'no-implicit-coercion': [
-      'error',
-      {
-        allow: [],
-      },
-    ],
+    'no-implicit-coercion': 'off',
 
     /**
      * Disallow variable and function declarations in the global scope
@@ -326,7 +321,7 @@ module.exports = {
     'no-param-reassign': [
       'error',
       {
-        props: false,
+        props: true,
       },
     ],
 

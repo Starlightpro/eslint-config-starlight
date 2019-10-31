@@ -288,7 +288,9 @@ module.exports = {
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
      */
     'react/void-dom-elements-no-children': 'error',
-
+    'react/state-in-constructor': 'off',
+    'react/prefer-read-only-props': 'off',
+    'react/static-property-placement': ['error'],
     /**
      * Enforce component methods order
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md

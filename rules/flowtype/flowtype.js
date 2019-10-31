@@ -4,6 +4,10 @@ module.exports = {
    * @see https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules
    */
   rules: {
+    'flowtype/require-indexer-name': 'off',
+    'flowtype/require-readonly-react-props': 'off',
+    'flowtype/arrow-parens': ['error', 'as-needed'],
+    'flowtype/require-inexact-type': 'off',
     /**
      * @see https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-array-style-complex-type
      */
@@ -28,7 +32,7 @@ module.exports = {
      * @see https://github.com/gajus/eslint-plugin-flowtype#boolean-style
      * @fixable
      */
-    'flowtype/boolean-style': ['error', 'boolean'],
+    'flowtype/boolean-style': 'off',
 
     /**
      * Enforces consistent use of trailing commas in Object and Tuple annotations

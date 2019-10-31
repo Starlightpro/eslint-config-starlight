@@ -2,8 +2,8 @@ module.exports = {
   settings: {
     react: {
       pragma: 'React',
-      version: '16.4',
-      flowVersion: '0.76',
+      version: '16.9',
+      flowVersion: '0.108',
     },
   },
   parserOptions: {

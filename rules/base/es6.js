@@ -4,6 +4,10 @@ module.exports = {
    * @see http://eslint.org/docs/rules/#ecmascript-6
    */
   rules: {
+    'function-call-argument-newline': ['error', 'consistent'],
+    'prefer-regex-literals': 'off',
+    'default-param-last': 'off',
+    'no-import-assign': 'error',
     /**
      * @see https://eslint.org/docs/rules/prefer-named-capture-group
      */

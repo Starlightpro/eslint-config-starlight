@@ -6,9 +6,22 @@ module.exports = {
    */
   rules: {
     /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-newline.md
+     */
+    'react/jsx-curly-newline': 'off',
+    /**
+     * A fragment is redundant if it contains only one child, or if it is
+     * the child of a html element, and is not a keyed fragment.
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
+     * @NOTE fixable
+     */
+    'react/jsx-no-useless-fragment': 'error',
+
+    'react/jsx-props-no-spreading': 'off',
+    /**
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md
      */
-    'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-props-no-multi-spaces': 'off',
     /**
      * Enforce shorthand or standard form for React fragments
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-fragments.md
@@ -20,7 +33,7 @@ module.exports = {
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-depth.md
      */
     'react/jsx-max-depth': ['error', { max: 4 }],
-    'react/jsx-child-element-spacing': 'error',
+    'react/jsx-child-element-spacing': 'off',
     /**
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-default-props.md
      */
