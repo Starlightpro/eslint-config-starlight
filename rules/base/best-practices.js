@@ -5,6 +5,23 @@ module.exports = {
    * @see http://eslint.org/docs/rules/#best-practices
    */
   rules: {
+    /**
+     * @see https://eslint.org/docs/rules/no-constructor-return
+     */
+    'no-constructor-return': 'warn',
+    /**
+     * @see https://eslint.org/docs/rules/no-setter-return
+     */
+    'no-setter-return': 'off',
+    /**
+     * @see https://eslint.org/docs/rules/prefer-exponentiation-operator
+     */
+    'prefer-exponentiation-operator': 'off',
+    'grouped-accessor-pairs': 'off',
+    /**
+     * @see https://eslint.org/docs/rules/no-dupe-else-if
+     */
+    'no-dupe-else-if': 'warn',
     'no-async-promise-executor': 'error',
     'require-atomic-updates': 'off',
     'no-misleading-character-class': 'off',
@@ -322,6 +339,26 @@ module.exports = {
       'error',
       {
         props: true,
+        ignorePropertyModificationsFor: [
+          // for reduce accumulators
+          'acc',
+          // for reduce accumulators
+          'accumulator',
+          // for e.returnvalue
+          'e',
+          // for Koa routing
+          'ctx',
+          // for Express requests
+          'req',
+          // for Express requests
+          'request',
+          // for Express responses
+          'res',
+          // for Express responses
+          'response',
+          // for ReactRouter context
+          'staticContext',
+        ],
       },
     ],
 
@@ -476,9 +513,10 @@ module.exports = {
 
     /**
      * Disallow async functions which have no await expression
+     * (note: this is a horrible rule that should never be used)
      * @see http://eslint.org/docs/rules/require-await
      */
-    'require-await': 'error',
+    'require-await': 'off',
 
     /**
      * Require var declarations be placed at the top of their containing scope

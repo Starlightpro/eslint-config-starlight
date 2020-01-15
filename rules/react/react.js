@@ -121,7 +121,7 @@ module.exports = {
      * Prevent usage of setState in componentDidMount
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
      */
-    'react/no-did-mount-set-state': ['error', 'disallow-in-func'],
+    'react/no-did-mount-set-state': 'off',
 
     /**
      * Prevent usage of setState in componentDidUpdate

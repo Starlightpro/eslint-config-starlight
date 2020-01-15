@@ -43,7 +43,7 @@ module.exports = {
      * Enforce camelcase naming convention
      * @see http://eslint.org/docs/rules/camelcase
      */
-    camelcase: ['error', { properties: 'always' }],
+    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
 
     /**
      * Enforce or disallow capitalization of the first letter of a comment
