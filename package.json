@@ -1,6 +1,6 @@
 {
   "name": "@starlightpro/eslint-config-starlight",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "ESLint rules for Starlight.",
   "private": false,
   "main": "index.js",
