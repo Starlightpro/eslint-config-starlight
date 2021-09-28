@@ -13,6 +13,9 @@
     "import.js",
     "promise.js"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Starlightpro/eslint-config-starlight.git"
@@ -32,7 +35,7 @@
   },
   "homepage": "https://github.com/Starlightpro/eslint-config-starlight#readme",
   "engines": {
-    "node": "11.x || 12.x || 13.x"
+    "node": ">=7.0.0"
   },
   "scripts": {
     "find-new-rules": "eslint-find-rules --unused .eslintrc.js",
