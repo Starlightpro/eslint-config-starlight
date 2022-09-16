@@ -15,6 +15,8 @@ module.exports = {
   },
   rules: {
     'no-debugger': 0,
+    'no-constant-binary-expression': 'off',
+    'prefer-object-has-own': 'off',
     'no-use-before-define': 'off',
     'no-alert': 0,
     'no-await-in-loop': 0,
@@ -70,6 +72,9 @@ module.exports = {
         assert: 'either',
       },
     ],
+    'react/hook-use-state': 0,
+    'react/iframe-missing-sandbox': 1,
+    'react/jsx-no-leaked-render': 1,
     'react/require-default-props': 0,
     'react/jsx-filename-extension': [
       1,
@@ -102,9 +107,9 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        printWidth: 120,
+        printWidth: 100,
         singleQuote: true,
-        jsxSingleQuote: true,
+        jsxSingleQuote: false,
         trailingComma: 'all',
         bracketSameLine: false,
         semi: true,
