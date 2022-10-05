@@ -1,13 +1,14 @@
 {
   "name": "@starlightpro/eslint-config-starlight",
-  "version": "0.5.0-rc.5",
+  "version": "0.5.0-rc.8",
   "description": "ESLint rules for Starlight.",
   "private": false,
   "main": "index.js",
   "files": [
     "index.js",
     "typescript.js",
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "lib.js"
   ],
   "publishConfig": {
     "@starlightpro:registry": "https://npm.pkg.github.com"
@@ -46,16 +47,18 @@
     "list-disabled-rules": "eslint-index .eslintrc.js --status omitted off --docs",
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
   "peerDependencies": {
-    "@babel/core": "^7.19.1",
+    "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -73,9 +76,8 @@
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-import": "^2.26.0",

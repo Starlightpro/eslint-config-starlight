@@ -128,16 +128,17 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/comma-dangle': ['off'],
+    'react/sort-comp': [
+      1,
+      {
+        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render'],
+      },
+    ],
     'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/comma-dangle': ['off'],
     'import/no-duplicates': 'error',
     'import/newline-after-import': 'error',
-    'no-restricted-globals': 'off',
-    /**
-     * Disallow unnecessary return await
-     * @see http://eslint.org/docs/rules/no-return-await
-     */
-    'no-return-await': 'off',
+
     'import/order': [
       'error',
       {
@@ -158,6 +159,12 @@ module.exports = {
         ],
       },
     ],
+    /**
+     * Disallow unnecessary return await
+     * @see http://eslint.org/docs/rules/no-return-await
+     */
+    'no-return-await': 'off',
+    'no-restricted-globals': 'off',
   },
   plugins: ['prettier', 'react-hooks'],
 };
