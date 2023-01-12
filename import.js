@@ -64,6 +64,8 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'import/unambiguous': 'off',
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/no-empty-named-blocks': 'error',
   },
   overrides: [
     {

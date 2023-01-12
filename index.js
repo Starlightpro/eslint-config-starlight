@@ -97,6 +97,7 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-empty-function': 'off', // we're all grown ups here...
     'no-empty-pattern': 'error',
+    'no-empty-static-block': 'error',
     'no-eq-null': 'off',
     'no-eval': 'error',
     'no-ex-assign': 'error',
@@ -131,6 +132,7 @@ module.exports = {
     'no-nested-ternary': 'off',
     'no-new': 'error',
     'no-new-func': 'error',
+    'no-new-native-nonconstructor': 'error',
     'no-new-object': 'error',
     'no-new-symbol': 'error',
     'no-new-wrappers': 'error',
