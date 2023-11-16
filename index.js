@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 /**
  * @see https://github.com/eslint/eslint/issues/3458
@@ -10,8 +10,8 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 const tsConfig = fs.existsSync('tsconfig.json')
   ? path.resolve('tsconfig.json')
   : fs.existsSync('types/tsconfig.json')
-  ? path.resolve('types/tsconfig.json')
-  : undefined;
+    ? path.resolve('types/tsconfig.json')
+    : undefined;
 
 module.exports = {
   env: {
@@ -123,6 +123,7 @@ module.exports = {
     'no-lone-blocks': 'error',
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
+    'no-object-constructor': 'error',
     'no-loss-of-precision': 'error',
     'no-magic-numbers': 'off', // sometimes this is ok (foo.length - 1 == index of last one)
     'no-misleading-character-class': 'off',
@@ -232,6 +233,7 @@ module.exports = {
     strict: 'error',
     'symbol-description': 'error',
     'use-isnan': 'error',
+    'unicode-bom': ['error', 'never'],
     'valid-typeof': 'error',
     'vars-on-top': 'error',
     yoda: 'error',

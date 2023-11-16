@@ -1,4 +1,4 @@
-const readPkgUp = require('read-pkg-up');
+const readPkgUp = import('read-package-up');
 const semver = require('semver');
 
 /**
